@@ -1,0 +1,8 @@
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .appointment-section {
+    min-height: auto; /* Reset height on small screens to allow content to expand */
+  }
+}
