@@ -19,6 +19,7 @@ const Devices = ({ device }) => { // Corrected prop name to 'device'
         </Card.Text>
         <Link to="/success" className="text-decoration-none">
           <Button variant="primary" className="d-block mx-auto">BUY NOW</Button>
+          <Button variant="primary" className="d-block mx-auto">BYE NOW</Button>
         </Link>
       </Card.Body>
     </Card>

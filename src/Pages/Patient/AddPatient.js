@@ -6,6 +6,10 @@ import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import './AddPatient.css';
+<<<<<<< HEAD
+=======
+import { Margin } from '@mui/icons-material';
+>>>>>>> origin/main
 const AddPatient = () => {
   const { handleSubmit, control, formState: { errors } } = useForm();
 

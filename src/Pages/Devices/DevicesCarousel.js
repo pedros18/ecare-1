@@ -30,11 +30,11 @@ const DevicesCarousel = ({ devices }) => {
     slidesToShow: isMobile ? 1 : isAverage ? 2 : 4,
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 2500 // Set autoplay speed to 3 seconds
+    autoplaySpeed: 2500 // Set autoplay speed to 2.5 seconds
   };
 
   return (
-    <div>
+    <div className="devices-carousel-container">
       <Slider {...settings}>
         {devices.map((device) => (
           <div key={device.id}>

@@ -13,31 +13,46 @@ const Login = () => {
       navigate("/"); // Redirect to home page
     }
   }, [user, navigate]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (email && password) {
+      processLogin(email, password);
+    }
+  };
+
   return (
     <div className="container my-5 d-flex justify-content-center">
       <div className="p-5 shadow-lg rounded-3">
         <h1 className="text-primary mb-4 text-center">Login</h1>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">
               Email address
             </label>
-            <input onBlur={(e) => setEmail(e.target.value)} type="email" className="form-control" id="exampleInputEmail1" required />
+            <input 
+              onBlur={(e) => setEmail(e.target.value)} 
+              type="email" 
+              className="form-control" 
+              id="exampleInputEmail1" 
+              required 
+            />
           </div>
           <div className="mb-3">
             <label htmlFor="exampleInputPassword1" className="form-label">
               Password
             </label>
-            <input onBlur={(e) => setPassword(e.target.value)} type="password" className="form-control" id="exampleInputPassword1" required />
+            <input 
+              onBlur={(e) => setPassword(e.target.value)} 
+              type="password" 
+              className="form-control" 
+              id="exampleInputPassword1" 
+              required 
+            />
           </div>
-          <div className="text-danger mb-3">{error}</div>
-          <div className="text-success mb-3">{success}</div>
+          {error && <div className="text-danger mb-3">{error}</div>}
+          {success && <div className="text-success mb-3">{success}</div>}
           <button
-            onClick={() => {
-              if (email && password) {
-                processLogin(email, password);
-              }
-            }}
             type="submit"
             className="btn btn-primary w-100"
           >
