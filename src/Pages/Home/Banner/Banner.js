@@ -8,9 +8,6 @@ import "./Banner.css";
 import banner1 from "../../../Images/Banner/medicine.jpg";
 import banner2 from "../../../Images/Banner/medicine2.jpg";
 
-import banner1 from "../../../Images/Banner/banner4.jpg";
-import banner2 from "../../../Images/Banner/banner2.jpg";
-
 import banner3 from "../../../Images/Banner/banner5.png";
 import logo from "../../../Images/logo.png"
 const Banner = () => {
