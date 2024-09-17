@@ -1,1 +1,7 @@
-* text=auto
+# Ensure all JavaScript, CSS, and HTML files use LF line endings
+*.js     text eol=lf
+*.css    text eol=lf
+*.html   text eol=lf
+
+
+* text=auto 

@@ -1,6 +1,6 @@
 
 .appointment-section {
-  min-height: calc(100vh - 100px); /* Adjust the height dynamically based on viewport height */
+  min-height: calc(100vh - 40vh); /* Adjust the height dynamically based on viewport height */
   /* Subtracting the height of the footer and any other fixed elements */
 }
 
