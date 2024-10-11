@@ -42,22 +42,3 @@
   color: #007bff; /* Change color of active dot */
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-  .doctors-carousel {
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-    padding: 0 10px;
-  }
-
-  .doctor-item {
-    flex: 0 0 auto;
-    margin: 10px;
-  }
-
-  .slick-slide {
-    display: flex;
-    justify-content: center;
-  }
-}
